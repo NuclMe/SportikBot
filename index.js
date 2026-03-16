@@ -14,6 +14,10 @@ async function main() {
     console.error('Встановіть COACH_TELEGRAM_ID у .env');
     process.exit(1);
   }
+  if (!config.mongodbUri) {
+    console.error('Встановіть MONGODB_URI у .env');
+    process.exit(1);
+  }
 
   await db.getDb();
   const bot = new Telegraf(config.botToken);

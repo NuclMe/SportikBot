@@ -1,7 +1,8 @@
 {
   "dependencies": {
-    "sql.js": "^1.11.0",
     "dotenv": "^16.4.5",
+    "mongodb": "^7.1.0",
+    "sql.js": "^1.11.0",
     "telegraf": "^4.16.3"
   }
 }
